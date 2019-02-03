@@ -22,6 +22,7 @@ public class Ejercicio3Clases {
         Tiempo t = new Tiempo(1, 20, 30);
         int n = 1;
         System.out.println(t);
+        //While para que cuando introduzcas un 0 se cierre el programa
         while (n > 0) {
             System.out.println(" 1.Suma"
                     + "\n 2.Resta"

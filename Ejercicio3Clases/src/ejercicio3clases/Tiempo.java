@@ -52,12 +52,12 @@ public class Tiempo {
     public String toString() {
         return this.hora + "h " + this.min + "m " + this.seg + "s.";
     }
-
+//Metodo para sumar dos horas. Se introduce un String que se convierte en un entero, se pasa todo a segundos y al final se pasa a horas, minutos y segundos
     public void Suma() {
         int  st, mt=0, ht=0,aux;
         Scanner sc = new Scanner(System.in);
         String hora;
-        System.out.println("Introduce la hora 1: ");
+        System.out.println("Introduce la hora 1 con el siguiente formato (2:35:14): ");
         hora = sc.nextLine();
         String[] parts = hora.split(":");
         String part1 = parts[0];
@@ -67,7 +67,7 @@ public class Tiempo {
         int m1 = Integer.parseInt(parts[1]);
         int s1 = Integer.parseInt(parts[2]);
         String resta;
-        System.out.println("Introduce la hora 2: ");
+        System.out.println("Introduce la hora 2 con el siguiente formato (2:35:14): ");
         resta = sc.nextLine();
         String[] parte = resta.split(":");
         String parte1 = parts[0];
@@ -95,13 +95,13 @@ public class Tiempo {
         }
         System.out.println("La hora restultante es: "+ht + "h " + mt + "m " + aux + "s. ");
     }
-
+//Metodo para restar dos horas. Se introduce un String que se convierte en un entero, se pasa todo a segundos y al final se pasa a horas, minutos y segundos
     public void Resta() {
         int aux, ht = 0, mt = 0, st;
 
         Scanner sc = new Scanner(System.in);
         String hora;
-        System.out.println("Introduce la hora 1: ");
+        System.out.println("Introduce la hora 1 con el siguiente formato (2:35:14): ");
         hora = sc.nextLine();
         String[] parts = hora.split(":");
         String part1 = parts[0];
@@ -111,7 +111,7 @@ public class Tiempo {
         int m1 = Integer.parseInt(parts[1]);
         int s1 = Integer.parseInt(parts[2]);
         String resta;
-        System.out.println("Introduce la hora 2: ");
+        System.out.println("Introduce la hora 2 con el siguiente formato (2:35:14): ");
         resta = sc.nextLine();
         String[] parte = resta.split(":");
         String parte1 = parts[0];
